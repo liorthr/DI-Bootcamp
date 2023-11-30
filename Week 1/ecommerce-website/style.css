@@ -1,0 +1,22 @@
+.products-section {
+    margin: 0px 40px;
+}
+
+nav {
+    background-color: black;
+    height: 10vh;
+    padding: 7px;
+}
+ul {
+    float: right;
+}
+li{
+    display: inline-block;
+    padding: 0;
+    color: white;
+    list-style-type: none;
+    margin: 7px 30px;
+}
+li a {
+    color: white;
+}
