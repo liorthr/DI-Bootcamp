@@ -31,7 +31,8 @@ li a {
 
 /*products section*/
 .section-products{
-    margin: 5% 5%;
+    margin: 5% 3%;
+    padding-left: 7vh;
 
 }
 .card-container {
@@ -45,11 +46,11 @@ li a {
     vertical-align: top;
     text-align: center;
     background-color: grey;
+    border-radius: 1vh;
   }
 
-  /* On mouse-over, add a deeper shadow */
   .card-container:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);*/
     transform: scale(1.1);
   }
   
@@ -59,5 +60,18 @@ li a {
   }
   .infos-products{
     background-color: grey;
+  }
+  .infos-products span{
+    color: red;
+  }
+  .infos-products button{
+    border-radius: 2vh;
+    width: 40%;
+    height: 35%;
+    background-color: greenyellow;
+    scale: 1.2;
+  }
+  .infos-products button:hover{
+    transform: scale(1.2);
   }
 /*footer of my page*/

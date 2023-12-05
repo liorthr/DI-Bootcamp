@@ -1,11 +1,15 @@
-.products-section {
-    margin: 0px 40px;
+body{
+    margin: 0;
 }
-
 nav {
     background-color: black;
-    height: 10vh;
+    height: 5vh;
     padding: 7px;
+}
+i{
+    width: 20vh;
+    height: 10vh;
+    float: left;
 }
 ul {
     float: right;
@@ -19,4 +23,48 @@ li{
 }
 li a {
     color: white;
+}
+.products-section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+}
+.card{
+    color: white;
+    margin: 3vh;
+    box-shadow: 10px 5px 5px black;
+    background-color: black;
+    width: 20%;
+}
+.card img{
+    width: 100%;
+}
+.card h1{
+    color: bisque;
+    font-size: larger;
+    display: grid;
+    place-items: center;
+    
+}
+.card h2{
+    color: red;
+    display: grid;
+    place-items: center;
+    display: inline ;
+}
+.card button{
+    background-color: blue;
+    border-radius: 2vh;
+    display: grid;
+    place-items: center;
+}
+.card button:hover{
+    transform: scale(1.2);
+}
+footer{
+    background-color: black;
+    color: white;
+    display: grid;
+    place-items: center;
 }
