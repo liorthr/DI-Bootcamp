@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+/*nav bar */
+nav {
+    background-color: black;
+    height: 5vh;
+    padding: 7px;
+}
+nav i{
+    position: relative;
+    width: 10%;
+    height: 10vh;
+    margin-top: 20px;
+    float: left;
+    color: white;
+}
+ul {
+    float: right;
+}
+li{
+    display: inline-block;
+    padding: 0;
+    color: white;
+    list-style-type: none;
+    margin: 7px 30px;
+}
+li a {
+    color: white;
+}
+
+/*products section*/
+.section-products{
+    margin: 5% 5%;
+
+}
+.card-container {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 35vh;
+    height: 50vh;
+    margin: 1vh;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: grey;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card-container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    transform: scale(1.1);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+  .infos-products{
+    background-color: grey;
+  }
+/*footer of my page*/

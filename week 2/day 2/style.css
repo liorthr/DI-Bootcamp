@@ -1,0 +1,36 @@
+.parent{
+    margin: 10px 8px;
+    width: 80em;
+    height: 50em;
+    background-color: blue;
+}
+.box-child{
+    width: 30%;
+    height: 30%;
+    background-color: antiquewhite;
+    margin: 8px;
+    flex-wrap: wrap;
+}
+.box-child img{
+    background-color: black;
+    width: 14%;
+    height: 22%;
+    border-radius: 50%;
+    margin-left: 40%;
+    display: flex;
+}
+.box-child p{
+    color: gray;
+    text-align: center;
+    background-color: brown;
+}
+.box-child h3{
+    background-color: brown;
+}
+
+/*flexbox using*/
+.parent{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
