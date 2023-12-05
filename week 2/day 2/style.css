@@ -10,7 +10,7 @@
     background-color: white;
     margin: 8px;
     flex-wrap: wrap;
-    box-shadow: #6495ED;
+    border: 1px solid black;
 }
 .box-child img{
     background-color: black;
@@ -18,7 +18,7 @@
     height: 22%;
     border-radius: 50%;
     margin-left: 40%;
-    border: 5px black;
+    border: 1px solid black;
     
 }
 .box-child p{
