@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            width: 70vw;
+            height: 90vh;
+            display: grid;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        .grid-el1{
+            background-color: aqua;
+            grid-row: 1 / span 1;
+            grid-column: 1 / span 1; 
+        }
+        .grid-el6{
+            background-color: aqua;
+            grid-row: 2 / span 2;
+            grid-column: 1 / span 1;
+        }
+        .grid-el7{
+            background-color: aqua;
+            grid-row: 3 / span 3;
+            grid-column: 1 / span 1;
+        }
+        .grid-el2{
+            background-color: blue;
+            grid-row: 1;
+            grid-column: 2 / span 6;
+        }
+        .grid-el3{
+            background-color: blue;
+            grid-row: 2;
+            grid-column: 2 / span 6;
+        }
+        .grid-el4{
+            background-color: blue;
+            grid-row: 3;
+            grid-column: 2 / span 6;
+        }
+        .grid-el5{
+            background-color: yellow;
+            grid-row: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-el1"></div>
+        <div class="grid-el2"></div>
+        <div class="grid-el3"></div>
+        <div class="grid-el4"></div>
+        <div class="grid-el5"></div>
+        <div class="grid-el6"></div>
+        <div class="grid-el7"></div>
+        <div class="grid-el8"></div>
+        <div class="grid-el9"></div>
+        <div class="grid-el10"></div>
+    </div>
+</body>
+</html>
