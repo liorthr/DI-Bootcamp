@@ -7,14 +7,55 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: blue;
+    background: linear-gradient(135deg, #0a3d62, #8e44ad);
+  background-size: 400% 400%;
+  -webkit-animation: gradientAnimation 15s ease infinite;
+  -moz-animation: gradientAnimation 15s ease infinite;
+  animation: gradientAnimation 3s ease infinite;
+  }
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  body::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #e84393;
+    animation: tacheAnimation 2s linear infinite;
   }
   
+  @keyframes tacheAnimation {
+    0% {
+      transform: translate(0, 0) scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(500%, -500%) scale(0.5);
+      opacity: 0;
+    }
+  }
+
+  
   button {
+    display: flex;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 16px;
-    background-color: bisque;
+    border: 1px solid #e84393;
+    background-color: #e84393;
     box-shadow: 1em;
   }
   
@@ -37,7 +78,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 10%;
     gap: 10px;
+  }
+  h2{
+    text-align: center;
+    
+  }
+  label{
+    margin-top: 5%;
+  }
+  #step2 {
+    flex-direction: row;
   }
   
   /* Additional styling can be added for better appearance */
