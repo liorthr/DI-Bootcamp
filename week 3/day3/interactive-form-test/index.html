@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button id="openFormBtn">Click to Open Form</button>
+
+<div class="form-modal" id="formModal">
+  <div class="form-content" id="step1">
+    <h2>Step 1</h2>
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Age">
+    <button id="nextStep1">Next</button>
+  </div>
+
+  <div class="form-content" id="step2" style="display: none;">
+    <h2>Step 2</h2>
+    <input type="text" placeholder="Phone Number">
+    <input type="email" placeholder="Email">
+    <button id="nextStep2">Next</button>
+  </div>
+
+  <div class="form-content" id="step3" style="display: none;">
+    <h2>Step 3</h2>
+    <h3>Question 1 : Quelle est votre couleur préférée ?</h3>
+    <input type="radio" id="couleur1" name="couleur" value="bleu">
+    <label for="couleur1">Bleu</label><br>
+    <input type="radio" id="couleur2" name="couleur" value="rouge">
+    <label for="couleur2">Rouge</label><br>
+    <input type="radio" id="couleur3" name="couleur" value="vert">
+    <label for="couleur3">Vert</label><br>
+    
+    <h3>Question 2 : Quel est votre animal préféré ?</h3>
+    <input type="radio" id="animal1" name="animal" value="chien">
+    <label for="animal1">Chien</label><br>
+    <input type="radio" id="animal2" name="animal" value="chat">
+    <label for="animal2">Chat</label><br>
+    <input type="radio" id="animal3" name="animal" value="oiseau">
+    <label for="animal3">Oiseau</label><br>
+    <button id="nextStep3">Finish</button>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
