@@ -1,3 +1,70 @@
+/*Body*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a3d62, #8e44ad);
+background-size: 400% 400%;
+-webkit-animation: gradientAnimation 15s ease infinite;
+-moz-animation: gradientAnimation 15s ease infinite;
+animation: gradientAnimation 3s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e84393;
+  animation: tacheAnimation 0.5s linear infinite;
+}
+
+@keyframes tacheAnimation {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(500%, -500%) scale(0.5);
+    opacity: 0;
+  }
+}
+
+/*Button in body*/
+#openFormBtn{
+    display: flex;
+    margin: 40% 40% 40% 40%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 16px;
+    border: 1px solid #e84393;
+    background-color: #e84393;
+    box-shadow: 1em;
+}
+#openFormBtn:hover{
+  background-color: #0a3d62;
+  transform: scale(1.1);
+  color: white;
+}
+
 /*Form Modal*/
 #formModal {
     display: none;
@@ -63,7 +130,7 @@
     width: 50px;
   }
   
-  #nextStep1, #nextStep2, #nextStep3{
+  #nextStep1, #nextStep2, #nextStep3, #nextStep4{
     position: absolute;
     width: 12%;
     height: 7%;
@@ -122,5 +189,39 @@
   }
   
   
-  
+/* step 3 */
+.contact-form {
+  display: flex;
+  align-items: center;
+  width: 300px; /* Ajustez la largeur selon vos besoins */
+}
+
+.country-code {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Espacement entre le drapeau et le menu déroulant */
+}
+
+.country-code img {
+  width: 30px; /* Ajustez la taille du drapeau */
+  height: auto;
+  margin-right: 5px; /* Espacement entre le drapeau et le menu déroulant */
+}
+
+.phone-number input {
+  width: 200px; /* Ajustez la largeur du champ téléphone */
+  padding: 8px; /* Ajustez le rembourrage selon vos préférences */
+}
+
+/* Styles pour le champ de texte carré */
+.phone-number input {
+  border-radius: 4px; /* Pour rendre le champ de texte carré */
+}
+
+/* Styles pour le menu déroulant */
+#country-code-select {
+  padding: 8px;
+  border-radius: 4px;
+}
+
   
