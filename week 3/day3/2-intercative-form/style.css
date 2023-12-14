@@ -95,6 +95,7 @@ body::before {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    /*margin-left: 14%;*/
   }
   
   .button {
@@ -130,19 +131,18 @@ body::before {
     width: 50px;
   }
   
-  #nextStep1, #nextStep2, #nextStep3, #nextStep4{
+  #nextStep1, #nextStep2, #nextStep3, #nextStep4, #nextStep5{
     position: absolute;
     width: 12%;
     height: 7%;
-    bottom: 10px;
-    right: 10px;
+    bottom: 3%;
+    right: 3%;
     padding: 8px 16px;
     background-color: red;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
   }
 
   /*Step 2*/
@@ -192,6 +192,7 @@ body::before {
 /* step 3 */
 .contact-form {
   display: flex;
+  margin-top: 4%;
   align-items: center;
   width: 300px; /* Ajustez la largeur selon vos besoins */
 }
@@ -201,15 +202,8 @@ body::before {
   align-items: center;
   margin-right: 10px; /* Espacement entre le drapeau et le menu déroulant */
 }
-
-.country-code img {
-  width: 30px; /* Ajustez la taille du drapeau */
-  height: auto;
-  margin-right: 5px; /* Espacement entre le drapeau et le menu déroulant */
-}
-
 .phone-number input {
-  width: 200px; /* Ajustez la largeur du champ téléphone */
+  width: 400%; /* Ajustez la largeur du champ téléphone */
   padding: 8px; /* Ajustez le rembourrage selon vos préférences */
 }
 
@@ -224,4 +218,33 @@ body::before {
   border-radius: 4px;
 }
 
-  
+  /*Step4*/
+  /* Style pour les champs */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style pour les rectangles */
+.form-group input,
+input[type="submit"] {
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+}
+
+/* Style pour le bouton Soumettre */
+input[type="submit"] {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+/*styep5*/
+#depart-fr-select{
+  width: 40%;
+  height: 60%;
+}
+.image-depart{
+  width: 70%;
+  height: 40%;
+}
