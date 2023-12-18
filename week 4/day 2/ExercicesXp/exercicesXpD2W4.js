@@ -109,11 +109,36 @@ myBill()
 
 //EX 5
 
+function changeEnough(itemPrice, amountOfChange){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//So confuse me
+
+
+
+
 
 
 //EX 6
-//1
 /*
+//1
 function hotelCost(){
     let userNumberNightAtHotel = prompt("How many night?")
     let priceAllNight = 0
@@ -121,38 +146,49 @@ function hotelCost(){
         userNumberNightAtHotel = prompt("Answer how many night? In number")
     }
     priceAllNight = userNumberNightAtHotel * 140
-    console.log("Price: " + priceAllNight + " $")
+    //console.log("Price: " + priceAllNight + " $")
+    return priceAllNight
 }
 
-hotelCost()
-*/
 //2
+function planeRideCost(){
+    let userDestination = prompt("Hey, Where do you want travel?")
+    let pricePlaneRide = 0
+    while(userDestination === "" || typeof userDestination !== "string" ){
+        userDestination = prompt("Please answer a correct destination")
+    }
+    userDestination = userDestination
+    if(userDestination === "London"){
+        pricePlaneRide = 183
+    }else if(userDestination === "Paris"){
+        pricePlaneRide = 220
+    }else{
+        pricePlaneRide = 300
+    }
+    //console.log("To: "+userDestination + " the price is "+ pricePlaneRide)
+    return pricePlaneRide
+}
 
-function planeRideCost(){
-    let userDestination = prompt("Hey, Where do you want travel?")
-    while(userDestination == "" || typeof userNumberNightAtHotel !== "string" ){
-        userDestination = prompt("Please answer a correct destination")
+//3
+function rentalCarCost(){
+    let userCarsDayRent = prompt("How many days you want to rent the car")
+    let costCarRental = 0
+    while(userCarsDayRent === "" || isNaN(userCarsDayRent) ){
+        userCarsDayRent= prompt("Answer how many day? In number")
     }
-    if(userDestination === "London"){
-        console.log("Price:183$")
-    }else if(userDestination === "Paris"){
-        console.log("Price: 220$")
+    if(userCarsDayRent<10){
+        costCarRental = userCarsDayRent * 40
     }else{
-        console.log("Price: 300$")
+        costCarRental = (userCarsDayRent * 40)*(1-0.05)
     }
+    //console.log("For: " + userCarsDayRent + " days the price is " + costCarRental + " $")
+    return costCarRental
 }
-planeRideCost()
-function planeRideCost(){
-    let userDestination = prompt("Hey, Where do you want travel?")
-    while(userDestination == "" || typeof userNumberNightAtHotel !== "string" ){
-        userDestination = prompt("Please answer a correct destination")
-    }
-    if(userDestination === "London"){
-        console.log("Price:183$")
-    }else if(userDestination === "Paris"){
-        console.log("Price: 220$")
-    }else{
-        console.log("Price: 300$")
-    }
+
+//4
+function totalVacationCost(){
+    console.log("Car: " + rentalCarCost() +" hotel: " + hotelCost()
+    + " Plane: " + planeRideCost())
 }
-planeRideCost()
+totalVacationCost()
+*/
