@@ -70,130 +70,48 @@
 // console.log(firstAndLastChild.lastElementChild.textContent)
 
 
+
+
+
+
+
+
+
 //EX 4
-// let allBooks = [
-//   {
-//     title: "La princess de Clèves",
-//     author: "anonymus",
-//     image: "URL",
-//     alreadyRead: true
-//   },
-//   {
-//     title: "Tanya",
-//     author: "Rabbi Schneor Zalman",
-//     image: "URL",
-//     alreadyRead: true
-//   }
-// ]
-
-// // const ulJS = document.querySelector("div")
-// // ulJS.innerText = allBooks
-// // document.getElementById(".listBooks").appendChild(ulJS)
-
-
-// function buildTable(data){
-//   var table = document.getElementsByClassName("listBooks")
-//   const arr = data;
-//     for(var obj of arr){
-//         var row = document.createElement('tr');
-//         for(var val of Object.values(obj)){
-//             var col = document.createElement('td');
-//             col.textContent = val;
-//             row.appendChild(col);
-//         }
-//         table.appendChild(row);
-//     }
-// }
-
-// buildTable(allBooks);
-
-/////////////////
-
-
-// let allBooks = [
-//   {
-//     title: "La princesse de Clèves",
-//     author: "anonymous",
-//     image: "https://www.librairieness.fr/145-large/likoutei-amarime-tanya.jpg",
-//     alreadyRead: true
-//   },
-//   {
-//     title: "Tanya",
-//     author: "Rabbi Schneor Zalman",
-//     image: "URL2",
-//     alreadyRead: true
-//   }
-// ];
-
-// function buildTable(data) {
-//   var table = document.querySelector(".listBooks");
-
-//   for (var obj of data) {
-//     var row = document.createElement('tr');
-
-//     // Create table cells for each property in the object
-//     var titleCell = document.createElement('td');
-//     titleCell.textContent = obj.title;
-//     row.appendChild(titleCell);
-
-//     var authorCell = document.createElement('td');
-//     authorCell.textContent = obj.author;
-//     row.appendChild(authorCell);
-
-//     var imageCell = document.createElement('td');
-//     imageCell.textContent = obj.image;
-//     row.appendChild(imageCell);
-
-//     var readCell = document.createElement('td');
-//     readCell.textContent = obj.alreadyRead ? 'Yes' : 'No';
-//     row.appendChild(readCell);
-
-//     table.appendChild(row);
-//   }
-// }
-
-// buildTable(allBooks);
-
-
-////////////////
-
 let allBooks = [
   {
-    title: "La princesse de Clèves",
-    author: "Victor Hugo",
-    image: "https://www.librairieness.fr/145-large/likoutei-amarime-tanya.jpg",
+    title: "La princess de Clèves",
+    author: "anonymus",
+    image: "URL",
+    alreadyRead: true
+  },
+  {
+    title: "Tanya",
+    author: "Rabbi Schneor Zalman",
+    image: "URL",
     alreadyRead: true
   }
-  
-];
+]
 
-function displayBooks(books) {
-  const bookListDiv = document.querySelector("bookList");
+// const ulJS = document.querySelector("div")
+// ulJS.innerText = allBooks
+// document.getElementById(".listBooks").appendChild(ulJS)
 
-  books.forEach(book => {
-    const bookDiv = document.createElement("div");
-    bookDiv.classList.add("book");
 
-    const titleElem = document.createElement("h2");
-    titleElem.textContent = book.title;
-
-    const authorElem = document.createElement("p");
-    authorElem.textContent = `Author: ${book.author}`;
-
-    const imageElem = document.createElement("img");
-    imageElem.src = book.image;
-    imageElem.alt = book.title;
-
-    const readStatusElem = document.createElement("p");
-    readStatusElem.textContent = `Already Read: ${book.alreadyRead ? 'Yes' : 'No'}`;
-
-    bookDiv.appendChild(titleElem);
-    bookDiv.appendChild(authorElem);
-    bookDiv.appendChild(imageElem);
-    bookDiv.appendChild(readStatusElem);
-
-    bookListDiv.appendChild(bookDiv);
-  });
+function buildTable(data){
+  var table = document.getElementsByClassName("listBooks")
+  const arr = data;
+    for(var obj of arr){
+        var row = document.createElement('tr');
+        for(var val of Object.values(obj)){
+            var col = document.createElement('td');
+            col.textContent = val;
+            row.appendChild(col);
+        }
+        table.appendChild(row);
+    }
 }
 
-displayBooks(allBooks);
+buildTable(allBooks);
+
+///////////////
