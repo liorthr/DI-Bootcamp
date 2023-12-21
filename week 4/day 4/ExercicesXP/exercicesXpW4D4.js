@@ -78,6 +78,38 @@
 
 
 //EX 4
+// let allBooks = [
+//   {
+//     title: "La princess de Clèves",
+//     author: "anonymus",
+//     image: "URL",
+//     alreadyRead: true
+//   },
+//   {
+//     title: "Tanya",
+//     author: "Rabbi Schneor Zalman",
+//     image: "URL",
+//     alreadyRead: true
+//   }
+// ]
+// let table = document.createElement("table");
+// let row = document.createElement("tr");
+// let cell = document.createElement("td");
+// let div = document.createElement("div");
+// div.textContent = "This is a div inside a table cell.";
+// cell.appendChild("div");
+// row.appendChild(cell);
+// table.appendChild(row);
+
+// const ulJS = document.querySelector("div")
+// // ulJS.innerText = allBooks
+// // document.getElementById(".listBooks").appendChild(ulJS)
+// let table = document.createElement("table");
+// // let tr = document.createElement("tr");
+// // tr.innerHTML = "<th>Title</th><th>Author</th><th>Image</th><th>Read</th>";
+// table.appendChild(ulJS);
+
+//test
 let allBooks = [
   {
     title: "La princess de Clèves",
@@ -91,27 +123,20 @@ let allBooks = [
     image: "URL",
     alreadyRead: true
   }
-]
-
-// const ulJS = document.querySelector("div")
-// ulJS.innerText = allBooks
-// document.getElementById(".listBooks").appendChild(ulJS)
+];
 
 
-function buildTable(data){
-  var table = document.getElementsByClassName("listBooks")
-  const arr = data;
-    for(var obj of arr){
-        var row = document.createElement('tr');
-        for(var val of Object.values(obj)){
-            var col = document.createElement('td');
-            col.textContent = val;
-            row.appendChild(col);
-        }
-        table.appendChild(row);
-    }
-}
+let table = document.createElement("table");
 
-buildTable(allBooks);
+allBooks.forEach((book) => {
+  let row = document.createElement("tr");
+  let titleCell = document.createElement("td");
+  titleCell.textContent = book.title;
+  let authorCell = document.createElement("td");
+  authorCell.textContent = book.author;
+  row.appendChild(titleCell);
+  row.appendChild(authorCell);
+  table.appendChild(row);
+});
 
-///////////////
+document.body.appendChild(table);
