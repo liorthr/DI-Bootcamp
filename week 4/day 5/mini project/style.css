@@ -1,7 +1,22 @@
 *{
     font-family: 'PT Sans', sans-serif;
+    color: aliceblue;
+    background-color: brown;
+    align-items: center;
 }
 
 body{
-    padding: 50px
+    padding: 50px  
+}
+button{
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    border-radius: 10px;
+    width: 30%;
+    height: 4em;
+    font-size: x-large;
+}
+button:hover{
+    background-color: black;
 }

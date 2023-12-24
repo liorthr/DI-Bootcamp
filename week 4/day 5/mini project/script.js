@@ -21,63 +21,22 @@ function playTheGame(){
 }      
 playTheGame()
 
-// function compareNumbers(userNumber,computerNumber){
-//     if(userNumber==computerNumber){
-//         alert("Winner")
-//     }else if(userNumber>computerNumber){
-//         alert("Your number is bigger then the computer's, guess again")
-//         CheckQuestion2 = prompt("Try with another number")
-//         playTheGame()//i want to prompt() to user guess again
-//     }else if(userNumber<computerNumber){
-//         alert("Your number is smaller then the computer's, guess again")
-//         CheckQuestion2 = prompt("Try with another number")
-//         playTheGame()//i want to prompt() to user guess again
-//     }else{
-//         alert("fail")
-//     }
-// }
 function compareNumbers(userNumber, computerNumber) {
-    if (userNumber === computerNumber) {
-        alert("Winner");
-    } else if (userNumber > computerNumber) {
-        alert("Your number is bigger than the computer's, guess again.");
-        let newGuess = prompt("Try with another number");
-        let checkNewGuess = parseInt(newGuess);
-// can you explain why we need to write "!" before isNaN
-        if (!isNaN(checkNewGuess) && checkNewGuess >= 1 && checkNewGuess <= 10) {
-            compareNumbers(checkNewGuess, computerNumber);
+    while (true) {
+        if (userNumber === computerNumber) {
+            alert("Congratulations! You guessed the correct number.");
+            break;
+        } else if (userNumber > computerNumber) {
+            userNumber = parseInt(prompt("Your number is bigger than the computer's. Guess again."));
         } else {
-            alert("Sorry, that's not a valid number. Game over.");
+            userNumber = parseInt(prompt("Your number is smaller than the computer's. Guess again."));
         }
-    } else if (userNumber < computerNumber) {
-        alert("Your number is smaller than the computer's. Guess again.");
-        let newGuess = prompt("Try with another number");
-        let checkNewGuess = parseInt(newGuess);
 
-        if (!isNaN(checkNewGuess) && checkNewGuess >= 1 && checkNewGuess <= 10) {
-            compareNumbers(checkNewGuess, computerNumber);
-        } else {
+        if (isNaN(userNumber)) {
             alert("Sorry, that's not a valid number. Game over.");
+            break;
         }
-    } else {
-        alert("Fail");
     }
 }
 
-// Start the game
 playTheGame();
-
-function compareNumbers(userNumber, computerNumber) {
-    if (userNumber === computerNumber) {
-        alert("Winner");
-    } else if (userNumber > computerNumber) {
-        do {alert("Your number is bigger than the computer's, guess again.");
-        let newGuess = prompt("Try with another number");
-        let checkNewGuess = parseInt(newGuess);
-
-        if (!isNaN(checkNewGuess) && checkNewGuess >= 1 && checkNewGuess <= 10) {
-            compareNumbers(checkNewGuess, computerNumber);
-        }
-    } 
-        while(userNumber === computerNumber)
-}
