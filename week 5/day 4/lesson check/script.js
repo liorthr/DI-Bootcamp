@@ -40,13 +40,25 @@
 //     clearTimeout(id)
 // }
 
-function showmessgae(){
-    let bodyJS = document.querySelector("body")
-    let h1JS = document.createElement("h1")
-    bodyJS.append(h1JS)
-    let textMessgae = "New text"
-    h1JS.textContent = textMessgae
-}
-const id = setInterval(showmessgae, 2000)
+// function showmessgae(){
+//     let bodyJS = document.querySelector("body")
+//     let h1JS = document.createElement("h1")
+//     bodyJS.append(h1JS)
+//     let textMessgae = "New text"
+//     h1JS.textContent = textMessgae
+// }
+// const id = setInterval(showmessgae, 2000)
 
-clearInterval(id)
+// clearInterval(id)
+
+let count = 10
+function countDown(){
+    const id = setInterval(() =>{
+        console.log(count)
+        count--
+        if(count<=0){
+            clearInterval(id)
+        }
+    }, 1000)
+}
+countDown()
