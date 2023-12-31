@@ -1,17 +1,21 @@
+
+let clickedColor = null;
+
 let squareColor = document.querySelectorAll(".square")
 squareColor.forEach(square =>{
     square.addEventListener("click", ()=>{
-        // console.log("You clicked on : " + square.style.backgroundColor)
         let computedColor = window.getComputedStyle(square).getPropertyValue("background-color");
-        console.log("You clicked on: " + computedColor);
+        clickedColor = computedColor
     })
 })
 
 let btnClear = document.getElementById("btn-clear")
 btnClear.addEventListener("click", () => {
-    console.log("clear all")
+    const cells = document.querySelectorAll('.grid-cell')
+    cells.forEach(cell => {
+        cell.style.backgroundColor = ''
+    })
 })
-
 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -23,30 +27,15 @@ document.addEventListener("DOMContentLoaded", function() {
         const cell = document.createElement("div");
         cell.classList.add("grid-cell");
         gridContainer.appendChild(cell);
-
-        // cell.addEventListener("mouseover", function() {
-        //     cell.style.backgroundColor = "black";
-        // });
         cell.addEventListener("click", function() {
-            cell.style.backgroundColor = "black";
+            if (clickedColor) {
+        cell.style.backgroundColor = clickedColor; 
+            }
+        });
+        cell.addEventListener("mouseover", function() {
+            if (clickedColor) {
+        cell.style.backgroundColor = clickedColor; 
+            }
         });
     }
 });
-
-
-
-
-
-
-
-// function playWithColor(){
-//     let squareColor = document.querySelectorAll(".square")
-//     squareColor.forEach(square =>{
-//     square.addEventListener("click", ()=>{
-//         // console.log("You clicked on : " + square.style.backgroundColor)
-//         let computedColor = window.getComputedStyle(square).getPropertyValue("background-color");
-//         console.log("You clicked on: " + computedColor);
-//     })
-// }) 
-// if
-// }
