@@ -1,30 +1,29 @@
-let client = "John";
+let client = "Betty";
 
 const groceries = {
     fruits : ["pear", "apple", "banana"],
     vegetables: ["tomatoes", "cucumber", "salad"],
-    totalPrice : "20$",
+    totalPrice : "35$",
     other : {
-        paid : true,
+        paid : false ,
         meansOfPayment : ["cash", "creditCard"]
     }
 }
-// Create an arrow function named displayGroceries,
-// that console.logs the 3 fruits from the groceries object.
-// Use the forEach method.
+
+//--------------------------------------------//
+
 let display = displayGroceries=>{
     groceries.fruits.forEach(element => {
         console.log(element)      
     });
 }
+//display()
 
-// Create another arrow function named cloneGroceries.
-// In the function, create a variable named user that
-// is a copy of the client variable. 
-//(Tip : make the user variable equal to the client variable)
-// Change the client variable to “Betty”. Will we also see this modification in the user variable ? Why ?
-// In the function, create a variable named shopping that is equal to the groceries variable.
-// Change the value of the totalPrice key to 35$. Will we also see this modification in the shopping object ? Why ?
-// Change the value of the paid key to false. Will we also see this modification in the shopping object ? Why ?
-
-// Invoke the cloneGroceries function.
+function cloneGroceries(){
+    let user = client
+    //beacause it's a copy 
+    //console.log(user + " and " + client)
+    let shopping = {...groceries}
+    console.log(JSON.stringify(shopping) + " and " + JSON.stringify(groceries) )
+}
+cloneGroceries()
