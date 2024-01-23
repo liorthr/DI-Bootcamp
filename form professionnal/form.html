@@ -21,7 +21,7 @@
   <form>
 
     <hr class="my-2">
-    <p class="text-center">Informations</p>
+    <h4 class="text-center">Informations</h4>
     <hr class="my-2">
 
     <div class="form-group">
@@ -29,17 +29,20 @@
       <input type="text" class="form-control" id="name" placeholder="Enter your name">
     </div>
 
+    <br>
+    <br>
+
     <hr class="my-2">
-    <p class="text-center">Location</p>
+    <h4 class="text-center">Location</h4>
     <hr class="my-2">
 
-    <div class="container mt-5">
-  <div class="city-list">
-    <div class="form-group">
-      <label for="cityDropdown">Select a City:</label>
-      <select class="form-control" id="cityDropdown">
-        <option value="" selected disabled>Select a city</option>
-        <option>Jérusalem</option>
+    <div class="form-row">
+        <!-- Use form-row to create a grid within the form -->
+        <div class="form-group col-md-6">
+          <label for="cityDropdown">Select a City:</label>
+          <select class="form-control" id="cityDropdown">
+            <option value="" selected disabled>Select a city</option>
+            <option>Jérusalem</option>
         <option>Tel Aviv</option>
         <option>Haïfa</option>
         <option>Rishon LeZion</option>
@@ -89,18 +92,20 @@
         <option>Rosh HaAyin</option>
         <option>Yavne</option>
         <option>Beit Shemesh</option>
-      </select>
-    </div>
-  </div>
-    </div>
+          </select>
+        </div>
 
-    <div class="form-group">
-      <label for="completeAddress">Complete Address:</label>
-      <input type="text" class="form-control" id="completeAddress" placeholder="Enter complete address">
-    </div>
+        <div class="form-group col-md-6">
+          <label for="completeAddress">Complete Address:</label>
+          <input type="text" class="form-control" id="completeAddress" placeholder="Enter complete address">
+        </div>
+      </div>
+
+      <br>
+      <br>
 
     <hr class="my-2">
-    <p class="text-center">Manager informations</p>
+    <h4 class="text-center">Manager informations</h4>
     <hr class="my-2">
 
     <div class="form-group">
@@ -118,8 +123,11 @@
       <input type="email" class="form-control" id="email" placeholder="Enter your email">
     </div>
 
+    <br>
+    <br>
+
     <hr class="my-2">
-    <p class="text-center">Social medias informations</p>
+    <h4 class="text-center">Social medias informations</h4>
     <hr class="my-2">
 
      <div class="form-group">
@@ -137,13 +145,27 @@
       <input type="url" class="form-control" id="urlInput" placeholder="Enter URL">
     </div>
 
+    <br>
+    <br>
+
+
     <hr class="my-2">
-    <p class="text-center">Pictures</p>
+    <h4 class="text-center">Pictures</h4>
     <hr class="my-2">
 
     <div class="form-group">
-      <label for="picture">Upload Picture:</label>
+      <label for="picture">Upload your logo:</label>
       <input type="file" class="form-control-file" id="picture">
+    </div>
+
+    <div class="form-group">
+        <label for="picture">Upload your menu:</label>
+        <input type="file" class="form-control-file" id="picture">
+      </div>
+
+    <div class="form-group">
+        <label for="picture">Upload your best picture:</label>
+        <input type="file" class="form-control-file" id="picture">
     </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
