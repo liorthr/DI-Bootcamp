@@ -1,0 +1,25 @@
+[
+    {
+        "username" : "shannascetbon",
+        "full_name": "Shanna Scetbon",
+        "age": 20,
+        "isFianced": true,
+        "isMarried": false,
+        "hobbies": ["makeup", "lior", "no gym", "cooking"]
+    },
+    {
+        "username" : "aarontahar770",
+        "full_name": "Aaron Tahar",
+        "age": 16,
+        "isFianced": false,
+        "isMarried": false,
+        "hobbies": ["sport", "plane", "foot", "politic"]
+    },{
+        "username" : "eyal_levy",
+        "full_name": "Eyal Levy",
+        "age": 19,
+        "isFianced": false,
+        "isMarried": false,
+        "hobbies": ["audio", "sarah", "gym", "cooking anything"]
+    }
+]
