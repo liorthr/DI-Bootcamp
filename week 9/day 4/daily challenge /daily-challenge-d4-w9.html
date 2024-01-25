@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Challenge</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="first-name">First name:</label>
+        <input type="text" name="first-name" value="">
+        <label for="last-name">Last name:</label>
+        <input type="text" name="last-name" value="">
+        <button type="button" onclick="myFunction()">Send</button> <!-- Use type="button" to prevent form submission -->
+    </form>
+
+    <div>
+        <p id="display-info"></p>
+    </div>
+
+    <script>
+        function myFunction(){
+            var firstName = document.getElementById("myForm").elements.namedItem("first-name").value;
+            var lastName = document.getElementById("myForm").elements.namedItem("last-name").value;
+            var fullName = {
+                first : firstName,
+                last : lastName
+            }
+            document.getElementById("display-info").innerHTML = JSON.stringify(fullName);
+        }
+    </script>
+</body>
+</html>
