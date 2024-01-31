@@ -55,21 +55,21 @@
 // })
 
 
-function getWeather(){
-    return new Promise((resolve, reject) => {
-        setTimeout(function(){
-            reject("Hey ca marche")
-        })
-    })
-}
+// function getWeather(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(function(){
+//             reject("Hey ca marche")
+//         })
+//     })
+// }
 
-function onSucces(data){
-    console.log(`Success ${data}`)
-}
-function onError(e){
-    console.log(`Èrror ${e}`)
-}
-getWeather().then(onSucces,onError)
+// function onSucces(data){
+//     console.log(`Success ${data}`)
+// }
+// function onError(e){
+//     console.log(`Èrror ${e}`)
+// }
+// getWeather().then(onSucces,onError)
 
 
 
