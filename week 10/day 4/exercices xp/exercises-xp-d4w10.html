@@ -1,0 +1,72 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises Xp</title>
+</head>
+<body>
+    <div id="fname">Name: </div>
+    <div id="sname">Sname: </div>
+    <div id="percentage">%: </div>
+    <div id="result">Result: </div>
+
+    <script src="exercisesXpD4W10.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+</head>
+<body id="body">
+    <form>
+        <label for="fname">Your Name:</label>
+        <input type="text" id="fname" name="fname" required>
+        <label for="sname">Partner's Name:</label>
+        <input type="text" id="sname" name="sname" required>
+        <button type="button" onclick="fetchData()">Calculate</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        const url = 'https://love-calculator.p.rapidapi.com/getPercentage';
+        const apiKey = 'db968b2843msha045305651672a8p106c75jsnf87bf1c8c53c';
+
+        async function fetchData() {
+            const fname = document.getElementById("fname").value;
+            const sname = document.getElementById("sname").value;
+            const fullUrl = `${url}?sname=${encodeURIComponent(sname)}&fname=${encodeURIComponent(fname)}`;
+            
+            const options = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': apiKey,
+                    'X-RapidAPI-Host': 'love-calculator.p.rapidapi.com'
+                }
+            };
+
+            try {
+                const response = await fetch(fullUrl, options);
+                const result = await response.json();
+                displayResult(result);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
+        function displayResult(result) {
+            const percentage = result.percentage;
+            const message = result.result;
+            document.getElementById("result").innerHTML = `
+                <p>Percentage: ${percentage}</p>
+                <p>Message: ${message}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
