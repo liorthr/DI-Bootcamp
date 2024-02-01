@@ -27,3 +27,49 @@
 
 
 // console.log(JSON.parse(fetchData()))
+
+
+//Exercise 1
+
+// async function displayProg(){
+//     try{
+//     const r = await 
+//     fetch("https://api.giphy.com/v1/gifs/search?q=hilarious&rating=g&api_key=hpvZycW22qCjn5cRM1xtWB8NKq4dQ2My", {
+//         method: "GET",       
+//     })
+//     return r.json()
+//     } catch(error){
+//         console.log(error)
+//     } 
+// }
+// displayProg()
+//     .then(res=>{
+//         console.log(res)
+//     })
+//     .catch(error=>{
+//         console.log(error)
+//     })
+
+
+//Exercise 2
+
+async function displayGif(){
+        try{
+        const r = await 
+        fetch("api.giphy.com/v1/gifs/translate	", {
+            method: "GET",       
+        })
+        return r.json()
+        } catch(error){
+            console.log(error)
+        } 
+    }
+displayGif()
+.then(res=>{
+            console.log(res)
+   })
+        .catch(error=>{
+            console.log(error)
+       
+    })
+
