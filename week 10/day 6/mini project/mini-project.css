@@ -66,5 +66,18 @@ body {
   color: #ffd608;
 }
 #display-name{
-  font-size: large;
+  text-align: center;
+  font-size: xx-large;
+}
+#display-height{
+  text-align: center;
+}
+#display-gender{
+  text-align: center;
+}
+#display-birth-year{
+  text-align: center;
+}
+#display-home-world{
+  text-align: center;
 }

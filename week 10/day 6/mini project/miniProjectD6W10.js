@@ -12,7 +12,7 @@ fetch(`https://www.swapi.tech/api/people/${peopleNumber}`)
     .then(data => {
         console.log(data);
         const nameJS = data.result.properties.name
-        displayName.textContent = `NAME: ${nameJS}`
+        displayName.textContent = `${nameJS}`
         const heightJS = data.result.properties.height
         displayHeight.textContent = `HEIGHT: ${heightJS}`
         const genderJS = data.result.properties.gender
