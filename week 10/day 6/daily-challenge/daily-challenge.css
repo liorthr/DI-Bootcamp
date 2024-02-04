@@ -1,0 +1,100 @@
+body {
+    background-image: url('jason-leung-SAYzxuS1O3M-unsplash.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+  }
+
+  #square-converter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 70%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 4px solid #000000;
+    border-radius: 10px;
+    background-color: #80f0809e;
+  }
+
+  /* Style for the title */
+  #title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* Styles for individual sections */
+  #from-money, #to-money, #amount-of-money, #finally-amount-after-conversion {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #finally-amount-after-conversion {
+    font-weight: bold;
+  }
+
+  #currency-selector {
+    margin-top: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+  
+  /* Style for when the dropdown is opened */
+  select:focus {
+    outline: none;
+    border-color: #007bff; /* Change to desired focus color */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Change to desired box-shadow */
+  }
+  
+  /* Style for dropdown arrow */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  /* Style for dropdown arrow */
+  select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>');
+    background-repeat: no-repeat;
+    background-position: right 8px top 50%;
+    background-size: 16px;
+  }
+  #amount-of-money input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
+
+  #finally-amount-after-conversion {
+    width: 100px; /* Adjust width and height as needed */
+    height: 100px;
+    background-color: #f0f0f0; /* Background color of the square */
+    border-radius: 10px; /* Adjust border-radius to make it more or less rounded */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* CSS for the text inside the square */
+  #finally-amount-after-conversion span {
+    font-size: 16px;
+  }
+  
+  
