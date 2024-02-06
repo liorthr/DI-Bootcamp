@@ -12,7 +12,7 @@ function nextSlide() {
       slides.style.transition = 'none';
       slides.style.transform = `translateX(${position}%)`;
       setTimeout(() => {
-        slides.style.transition = 'transform 0.8s ease-in-out';
+        slides.style.transition = 'transform 0.4s ease-in-out';
       }, 50);
     }, 800);
   }
