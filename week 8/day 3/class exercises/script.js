@@ -83,31 +83,62 @@
 // });
 // console.log(newArrOfName)
 
-let employees = [
-    {
-        firstName: 'John',
-        lastName: 'Doe',
-        age: 27,
-        joinedDate: 'December 15, 2017'
-    },
+// let employees = [
+//     {
+//         firstName: 'John',
+//         lastName: 'Doe',
+//         age: 27,
+//         joinedDate: 'December 15, 2017'
+//     },
 
-    {
-        firstName: 'Ana',
-        lastName: 'Rosy',
-        age: 25,
-        joinedDate: 'January 15, 2019'
-    },
+//     {
+//         firstName: 'Ana',
+//         lastName: 'Rosy',
+//         age: 25,
+//         joinedDate: 'January 15, 2019'
+//     },
 
-    {
-        firstName: 'Zion',
-        lastName: 'Albert',
-        age: 30,
-        joinedDate: 'February 15, 2011'
-    }
-]
+//     {
+//         firstName: 'Zion',
+//         lastName: 'Albert',
+//         age: 30,
+//         joinedDate: 'February 15, 2011'
+//     }
+// ]
 
-const newArr = employees.filter((item)=>{
-    return item.age > 26
+// const newArr = employees.filter((item)=>{
+//     return item.age > 26
     
-})
-console.log(newArr)
+// })
+// console.log(newArr)
+
+// let arr= [2,5,700]
+// function sumOfArry(){
+//     let sum = 0
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i]
+//     }
+//     return sum
+// }
+// console.log(sumOfArry())
+
+// const sum = arr.reduce((total, item) => {
+//     return total + item;
+//   }, 1);
+  
+//   console.log(sum);
+  
+  /**
+  Examples
+      16  -->  1 + 6 = 7
+     942  -->  9 + 4 + 2 = 15  -->  1 + 5 = 6
+  132189  -->  1 + 3 + 2 + 1 + 8 + 9 = 24  -->  2 + 4 = 6
+  493193  -->  4 + 9 + 3 + 1 + 9 + 3 = 29  -->  2 + 9 = 11  -->  1 + 1 = 2
+
+  */
+ let number = 2567
+ let sum = 0
+    finalSum = number.reduce((item,i)=>{
+    return item + i
+    console.log(finalSum)
+ })  

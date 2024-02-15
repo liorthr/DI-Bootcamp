@@ -84,8 +84,8 @@ body {
 
   #finally-amount-after-conversion {
     width: 100px; /* Adjust width and height as needed */
-    height: 100px;
-    background-color: #f0f0f0; /* Background color of the square */
+    height: 50px;
+    background-color: #ffffff; /* Background color of the square */
     border-radius: 10px; /* Adjust border-radius to make it more or less rounded */
     display: flex;
     justify-content: center;

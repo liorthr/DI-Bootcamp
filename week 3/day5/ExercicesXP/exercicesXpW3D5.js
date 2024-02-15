@@ -136,7 +136,7 @@ for(let index in family){
 */
 
 //EX 6
-/*
+
 const details = {
     my: 'name',
     is: 'Rudolf',
@@ -146,16 +146,16 @@ const details = {
 for(let i = 0; i < details.lenght; i++){
     console.log((i+details[i])+ (i+details[i])+(i+details[i]) )
 }
-*/
+
 //Really don't understand
 //7
-/*
+
 const names = ["Jack", "Philip", "Sarah", "Amanda", "Bernard", "Kyle"]
 let SocietyName = ''
 for(let i= 0; i < names.length; i++){
     SocietyName = names[i][0]
 }
-SocietyFinal= SocietyName.sort();
-console.log(SocietyFinal)
-*/
+//SocietyFinal = SocietyName.join().sort()
+//console.log(SocietyFinal)
+console.log(SocietyName)
 // The sort() method confuse me a lot !

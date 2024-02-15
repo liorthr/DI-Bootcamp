@@ -1,0 +1,21 @@
+const emojis = [
+    { emoji: '😀', name: 'Smile' },
+    { emoji: '🐶', name: 'Dog' },
+    { emoji: '🌮', name: 'Taco' },
+    { emoji: '🚗', name: 'Car' },
+    { emoji: '🏀', name: 'Basketball' },
+    { emoji: '📚', name: 'Book' },
+    { emoji: '🎉', name: 'Party' },
+    { emoji: '🍕', name: 'Pizza' },
+    { emoji: '🎸', name: 'Guitar' },
+    { emoji: '🎨', name: 'Painting' },
+    { emoji: '🎣', name: 'Fishing' },
+    { emoji: '🚀', name: 'Rocket' },
+    { emoji: '🍔', name: 'Hamburger' },
+    { emoji: '⚽', name: 'Soccer Ball' },
+    { emoji: '🎮', name: 'Video Game' },
+    { emoji: '🎶', name: 'Music' },
+    { emoji: '🌺', name: 'Flower' },
+    { emoji: '🍦', name: 'Ice Cream' },
+    { emoji: '🏝️', name: 'Island' }
+];
