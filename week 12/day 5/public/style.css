@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+}
+/* styles.css */
+#list-of-products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.product,.image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+    
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: azure;
+    width: 200px;
+    height: 200px;
+}
