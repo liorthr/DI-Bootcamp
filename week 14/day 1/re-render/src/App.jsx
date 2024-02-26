@@ -1,10 +1,14 @@
 import './App.css'
+import Test from './components/Test'
+import TestA from './components/TestA'
 
 function App() {
   
 
   return (
     <>
+      <Test/>
+      <TestA/>
       <h2>Class vs. Functions components</h2>
       <h2>Component Lifecycle</h2>
       <h2>Event in react</h2>
