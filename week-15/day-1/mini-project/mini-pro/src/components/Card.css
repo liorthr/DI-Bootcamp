@@ -1,0 +1,32 @@
+body{
+    /* background-color: blue; */
+    margin: 0;
+    padding: 0;
+}
+
+.card-box{
+    border-radius: 16px;
+    background-color: white;
+    /* color: blue; */
+    width: 562px;
+    height: 229px;
+    margin-bottom: 300px;
+}
+
+.quote-sentence{
+    width: 520px;
+    height: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.author-of-quote{
+    margin-left: 300px;
+}
+
+.button-another-quote{
+    margin-left: 300px;
+    margin-bottom: 60px;
+    /* background-color: blue; */
+}
